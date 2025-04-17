@@ -49,6 +49,20 @@
   <script src="/assets/theme/js/popper.min.js"></script>
   <script src="/assets/theme/js/bootstrap.min.js"></script>
   <script src="/assets/theme/js/dynamic_page.js"></script>
+
+  <style>
+    .section-padding {
+    padding: 0rem 1rem;
+    }
+    
+    h3 {
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 0.1rem;
+        }
+
+  </style>
+
+
 </head>
 
 
@@ -93,8 +107,33 @@
               </p>
               <p><em>September 2025 - Rome, Italy</em></p>
             </div>
-            <div class="tags">
-            </div>
+            <a href="/#c4p" class="btn btn-primary btn-m mt-3">Submit your paper</a>
+            <div id="countdown" class="tags"></div>
+              <script>
+                // Set the date and time for the countdown
+                const countdownDate = new Date("June 16, 2025 00:00:00").getTime();
+
+                // Update the countdown every second
+                const countdownInterval = setInterval(function () {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+
+                // Calculate days, hours, minutes, and seconds
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                  // Display the result in the countdown div
+                  document.getElementById("countdown").innerHTML = `
+                  <p><br><i class="fas fa-hourglass-half"></i> Countdown to Submission deadline: <strong>${days}d ${hours}h ${minutes}m </strong></p>
+                  `;
+                // If the countdown is over, display a message
+                if (distance < 0) {
+                  clearInterval(countdownInterval);
+                  document.getElementById("countdown").innerHTML = "<p>Submission closed!</p>";
+                }
+                }, 1000);
+              </script>
           </div>
         </div>
       </div>
@@ -108,8 +147,8 @@
           <div class="row">
             <div class="col">
 
-              <section id="about" style="text-align: justify;">
-                <h2>About IMPACT 2025</h2>
+              <section id="about" style="text-align: justify;" class="section-padding">
+                <h3>About IMPACT 2025</h3>
                 <div class="row">
                   <div class="col-md-6">
                     <p>
@@ -128,8 +167,8 @@
               <br>
 
 
-              <section id="c4p" style="margin-bottom: 50px;">
-                <h2>Call for Papers</h2>
+              <section id="c4p" style="margin-bottom: 50px;" class="section-padding">
+                <h3>Call for Papers</h3>
  
                 <p>We invite submissions related to the following topics, including, but not limited to:</p>
                 <ul>
@@ -197,7 +236,7 @@
                   
               </section>
 
-              <section id="dates" style="margin-bottom: 50px;">
+              <section id="dates" style="margin-bottom: 50px;" class="section-padding">
                 <h3>Important Dates</h3>
                 <p>Submission deadline: <strong>June 16, 2025</strong> <br>
                   <!-- <span style="color: red;"><strong>June, 25 2024</strong></span> -->
@@ -208,12 +247,12 @@
 
 
 
-              <section id="program" style="margin-bottom: 50px;">
+              <section id="program" style="margin-bottom: 50px;" class="section-padding">
                 <h3>Program</h3>
                 <p>The program will be available soon.</p>
               </section>
 
-              <section id="organizers" style="margin-bottom: 40px;">
+              <section id="organizers" style="margin-bottom: 40px;" class="section-padding">
                 <h3>Organizing Committee</h3>
                 <div class="container">
                   <div class="row">
@@ -445,7 +484,7 @@
                 </div>
               </section> ---->
 
-              <section id="committee" style="margin-bottom: 50px;">
+              <section id="committee" style="margin-bottom: 50px;" class="section-padding">
                 <h3>Program Committee</h3>
                 <ul>
                   <li><strong>Alessandro Bria</strong>, University of Cassino and Southern Lazio</li>
@@ -471,7 +510,7 @@
                 
               </section>
 
-              <section id="registration" style="margin-bottom: 50px;">
+              <section id="registration" style="margin-bottom: 50px;" class="section-padding">
                 <h3>Registration</h3>
                 <p>Here is reported the registration fee ONLY for the workshop days:
                 <img src="assets/theme/images/reg_fees.png" alt="Registration fee" class="img-fluid" style="max-width: 80%; height: auto;"></p>
@@ -480,14 +519,14 @@
               </section>
 
 
-              <section id="venue" style="margin-bottom: 50px;">
+              <section id="venue" style="margin-bottom: 50px;" class="section-padding">
                 <h3>Venue</h3>
                 <p>Please read about the venue in the <a href="https://sites.google.com/view/iciap25/attending/conference-venue">ICIAP venue page</a>.</p>
               </section>
 
 
 
-              <section id="logos" class="row flex-expand">
+              <section id="logos" class="row flex-expand" class="section-padding">
                 <h4>Organized by:</h4>
                 <div class="col-md-4 col-sm-12 item-expand">
                   <a href="https://www.uniba.it/" target="_blank">
