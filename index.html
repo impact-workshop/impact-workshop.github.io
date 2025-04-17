@@ -1,254 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMPACT Workshop - Website Coming Soon</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem 0;
-        }
-        
-        .container {
-            text-align: center;
-            padding: 1.5rem;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            max-width: 700px;
-            position: relative;
-            z-index: 1;
-        }
-        
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-        }
-        
-        h2 {
-            font-size: 1.6rem;
-            margin-bottom: 0.8rem;
-            color: #3498db;
-        }
-        
-        p {
-            font-size: 1.1rem;
-            line-height: 1.5;
-            margin-bottom: 1.2rem;
-            color: #555;
-        }
-        
-        strong {
-            color: #2c3e50;
-        }
-        
-        .progress-bar {
-            height: 5px;
-            background-color: #e0e0e0;
-            border-radius: 3px;
-            margin: 1.5rem 0;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            width: 30%;
-            background: linear-gradient(90deg, #3498db, #2ecc71);
-            animation: progress 2s ease-in-out infinite alternate;
-            border-radius: 3px;
-        }
-        
-        .contact {
-            margin-top: 2rem;
-        }
-        
-        .contact a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        .contact a:hover {
-            color: #2980b9;
-        }
-        
-        .bg-shapes {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-            overflow: hidden;
-        }
-        
-        .shape {
-            position: absolute;
-            opacity: 0.1;
-            transform-origin: center;
-        }
-        
-        .shape-1 {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background-color: #3498db;
-            top: 10%;
-            left: 10%;
-            animation: float 20s ease-in-out infinite;
-        }
-        
-        .shape-2 {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background-color: #2ecc71;
-            bottom: -100px;
-            right: -100px;
-            animation: float 15s ease-in-out infinite 1s;
-        }
-        
-        .shape-3 {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: #e74c3c;
-            top: 60%;
-            right: 20%;
-            animation: float 18s ease-in-out infinite 2s;
-        }
-        
-        @keyframes progress {
-            0% {
-                width: 10%;
-            }
-            100% {
-                width: 70%;
-            }
-        }
-        
-        @keyframes float {
-            0% {
-                transform: translate(0, 0) rotate(0);
-            }
-            50% {
-                transform: translate(30px, 20px) rotate(10deg);
-            }
-            100% {
-                transform: translate(0, 0) rotate(0);
-            }
-        }
-        
-        .logo-container {
-            margin: 0.8rem auto 1.5rem;
-            max-width: 220px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .logo-container img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        .organizers {
-            margin-top: 2rem;
-            padding-top: 1.2rem;
-            border-top: 1px solid #eee;
-            text-align: left;
-        }
-        
-        .organizers h3 {
-            color: #2c3e50;
-            margin-bottom: 0.8rem;
-            text-align: center;
-            font-size: 1.3rem;
-        }
-        
-        .organizers ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.8rem;
-        }
-        
-        .organizers li {
-            flex: 1 1 240px;
-            padding: 0.6rem;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            font-size: 0.95rem;
-            line-height: 1.3;
-        }
-        
-        .organizers .title {
-            color: #3498db;
-            font-weight: 600;
-        }
-        
-        .organizers .affiliation {
-            font-style: italic;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="bg-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-    </div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>IMPACT 2025 - Workshop @ICIAP</title>
+
+  <!-- Meta description -->
+  <meta name="description" content="The IMPACT workshop explores innovative AI applications in healthcare, focusing on medical image analysis and clinical decision support. It addresses interpretability and clinical transferability challenges, revolutionizing diagnosis and personalized treatment.">
     
+  <!-- Parole chiave (meno importante rispetto al passato, ma ancora utile) -->
+  <meta name="keywords" content="artificial intelligence, computer vision, conference, workshop, iciap, image analysis, medical imaging, machine learning, deep learning, image processing">
+      
+  <!-- Autore -->
+  <meta name="author" content="IMPACT - Innovative Medical image Processing with AI-driven preCision Technologies 2025 Workshop ICIAP">
+
+  <!-- Favicons e icone per dispositivi vari -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
+  <!-- Meta tag per il tracciamento -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://impact-workshop.github.io/">
+
+  <!-- Tag Open Graph per condivisione su social media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://impact-workshop.github.io/">
+  <meta property="og:title" content="IMPACT - Innovative Medical image Processing with AI-driven preCision Technologies 2025">
+  <meta property="og:description" content="The IMPACT workshop explores innovative AI applications in healthcare, focusing on medical image analysis and clinical decision support. It addresses interpretability and clinical transferability challenges, revolutionizing diagnosis and personalized treatment.">
+  <meta property="og:image" content="https://impact-workshop.github.io/assets/theme/images/logo.png">
+  <meta property="og:image:alt" content="IMPACT - Innovative Medical image Processing with AI-driven preCision Technologies 2025">
+  <meta property="og:site_name" content="IMPACT 2025 Workshop">
+  
+  <!-- Bootstrap CSS is included in main.css -->
+  <link rel="stylesheet" href="/assets/theme/css/main.css">
+  <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/theme/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/theme/css/pygments.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+
+  <link rel="alternate" type="application/rss+xml" title="IMPACT 2025 Workshop - RSS feed" href="/feed.xml">
+  
+  <!-- Javascript libraries: loaded at top so templates can use these -->
+  <script src="/assets/theme/js/jquery.min.js"></script>
+  <script src="/assets/theme/js/popper.min.js"></script>
+  <script src="/assets/theme/js/bootstrap.min.js"></script>
+  <script src="/assets/theme/js/dynamic_page.js"></script>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-print-none" id="main-nav">
     <div class="container">
-        <h1>Website Under Construction</h1>
-        
-        <div class="logo-container">
-            <img src="assets/img/logo.png" alt="IMPACT Workshop Logo">
-        </div>
-        
-        <h2>IMPACT Workshop</h2>
-        <p><strong>Innovative Medical image Processing with AI-driven preCision Technologies</strong></p>
-        <p>In conjunction with the <strong>23rd International Conference on Image Analysis and Processing</strong></p>
-        <p><strong>15/16 September 2025 <br>Sapienza University of Rome, Italy</strong></p>
-        
-        <div class="progress-bar">
-            <div class="progress-fill"></div>
-        </div>
-        
-        <p>Our website is coming soon. Check back regularly for updates on the workshop program, submission guidelines, and important dates.</p>
-        
-        <div class="contact">
-            <p>For more information, please contact us at: <a href="mailto:impact.iciap@gmail.com">impact.iciap@gmail.com</a></p>
-        </div>
-        
-        <div class="organizers">
-            <h3>Workshop Organizers</h3>
-            <ul>
-                <li><span class="title">Prof. Roberto Bellotti</span><br><span class="affiliation">University of Bari Aldo Moro</span></li>
-                <li><span class="title">Dr. Ciro Russo</span><br><span class="affiliation">University of Cassino and Lazio Meridionale</span></li>
-                <li><span class="title">Grazia Gargano</span><br><span class="affiliation">University of Bari Aldo Moro</span></li>
-                <li><span class="title">Dr. Roberta De Fazio</span><br><span class="affiliation">University of Campania "L. Vanvitelli"</span></li>
-                <li><span class="title">Gaetano Settembre</span><br><span class="affiliation">University of Bari Aldo Moro</span></li>
-            </ul>
-        </div>
-        
-        <div class="social-links">
-        </div>
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img class="me-3" src="/assets/theme/images/logo.png" alt="IMPACT 2025 - Workshop"> IMPACT 2025
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+        Menu <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="navbar-item"><a class="nav-link active" href="/">Home</a></li>
+          <li class="navbar-item"><a class="nav-link" href="/#about">About</a></li>
+          <li class="navbar-item"><a class="nav-link" href="/#c4p">Call for papers</a></li>
+          <li class="navbar-item"><a class="nav-link" href="/#dates">Dates</a></li>
+          <li class="navbar-item"><a class="nav-link" href="/#organizers">Committees</a></li>
+          <li class="navbar-item"><a class="nav-link" href="/#registration">Registration</a></li>
+          <li class="navbar-item"><a class="nav-link" href="/#program">Program</a></li>
+          <li class="navbar-item"><a class="nav-link" href="/#venue">Venue</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+
+  <main id="main-content">
+
+    <header class="header bg-image" id="main-head" style="background-image: url('/assets/theme/images/banner3.jpeg')" src="/assets/theme/images/banner3.jpeg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 position-relative mx-auto">
+            <h1 class="home">1<sup>st</sup> Workshop on<br> Innovative Medical image Processing with AI-driven preCision Technologies (IMPACT)</h1>
+
+            <div class="lead">
+              <p>in conjunction with the<br />
+                <a href="https://sites.google.com/view/iciap25/home" target="_blank">23rd International Conference on Image Analysis and Processing (ICIAP 2025)</a>
+              </p>
+              <p><em>September 15-16, 2025 - Rome, Italy</em></p>
+            </div>
+            <div class="tags">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="container content">
+
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto">
+          <div class="row">
+            <div class="col">
+
+              <section id="about">
+                <h2>About IMPACT 2025</h2>
+                <p>Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+                  Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+                  Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+                  Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+                  Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+                  Bla Bla Bla Bla Bla Bla Bla Bla Bla 
+                </p>
+              </section>
+
+              <section id="logos" class="row flex-expand">
+                <p>Organized by:</p>
+                <div class="col-md-4 col-sm-12 item-expand">
+                  <a href="https://www.uniba.it/" target="_blank">
+                    <div class="pad shadow">
+                      <img src="assets/theme/images/Logo-UNIBA.jpg" class="img-sponsor">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12 item-expand">
+                  <a href="https://www.unicampania.it" target="_blank">
+                    <div class="pad shadow">
+                      <img src="assets/theme/images/logo-vanvitelli.jpg.png" class="img-sponsor">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12 item-expand">
+                  <a href="https://www.unicas.it" target="_blank">
+                    <div class="pad shadow">
+                      <img src="https://www.unicas.it/media/34klzppo/unicas.svg" class="img-sponsor">
+                    </div>
+                  </a>
+                </div>
+              </section>
+
+
+
+              <section id="c4p" style="margin-bottom: 50px;">
+                <h2>Call for papers</h2>
+                <p style="text-align: justify;">We welcome submissions focusing on recent advances and the latest developments in xxxxxx, xxxxx, xxxxx, xxxxx, xxxxx. 
+                  In addition, we encourage submissions from statistics, machine learning and big data analytics,
+                  which present techniques that take advantage of the informative richness of complex, massive data for efficiently and effectively
+                  identifying new patterns.</p>
+
+                <h4>Workshop topics</h4>
+                  <ul id="workshop-topics">
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                    <li>Topic</li>
+                  </ul>
+
+                  <h4>Paper submissions</h4>
+                  <p style="text-align: justify;">IMPACT welcomes diverse contributions, ranging from research papers showcasing well-established
+                    findings or ongoing work to innovative papers introducing novel ideas or exploratory research. Additionally,
+                    the conference embraces papers that share industry experiences and case studies. However, it is
+                    essential to highlight that papers based on work that has been recently published elsewhere will not be considered for
+                    inclusion in the conference proceedings.</p>
+                  <p>Submissions are accepted in two formats:</p>
+                  <ul>
+                    <li style="text-align: justify;"><strong>Extended abstract</strong> having at most 8 pages including references. Extended abstracts are intended
+                      to stimulate discussion and collaboration by either reviewing previously published research or outlining new
+                      emerging ideas.</li>
+                    <li style="text-align: justify;"><strong>Regular research papers</strong> having at most <strong>12 pages including references</strong>. To be published in the
+                      proceedings, research papers must be original, not published previously, and not submitted concurrently elsewhere.</li>
+                  </ul>
+                  <p style="text-align: justify;">All submissions should be made in PDF via <a href="https://easychair.org/conferences/?conf=impact25">EasyChair system</a>.<br>
+                    The accepted papers will be included in a joint Post-Workshop proceeding published by <a
+                      href="https://www.springer.com/series/0558">Springer Lecture Notes in Computer Science (LNCS)</a>, indexed in Web of Science; Scopus; EI Engineering Index; Google Scholar; DBLP; etc.
+                      We suggest workshop papers are prepared and submitted using this template in <a href="/assets/LNCSProceedingsTemplates.zip">LNCS format</a>.
+                  </p>
+                  
+              </section>
+
+              <section id="dates" style="margin-bottom: 50px;">
+                <h3>Dates</h3>
+                <p>Submission deadline: <strong>XXXXX XX, 2025</strong> <br>
+                  <!-- <span style="color: red;"><strong>June, 25 2024</strong></span> -->
+                  Notification of acceptance: <strong>XXXX XX, 2025</strong> <br>
+                  Camera-ready papers: <strong>XXXX XX, 2025</strong> <br>
+                  Workshop: <strong>To Be Announced (TBA), tentative dates: September 15 or 16, 2025.</strong></p>
+              </section>
+
+              <section id="organizers" style="margin-bottom: 50px;">
+                <h3>Organizing Committee</h3>
+                <div>
+
+                  <div class="d-flex team-member">
+                    <div class="flex-shrink-0 me-3">
+                      <img src="https://images.zapnito.com/cdn-cgi/image/metadata=copyright,format=auto,quality=95,fit=scale-down/https://images.zapnito.com/users/568113/avatar/large_S48kDQVURG99cqQkmKug_Copia_20di_20CSM_2646_preview.jpg.png" alt="Roberto Bellotti">
+                    </div>
+                    <div>
+                      <h5 id="Roberto+Bellotti">
+                        Roberto Bellotti
+                        <br><small class="text-muted">Univerisity of Bari Aldo Moro</small>
+                      </h5>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="https://medphys.ba.infn.it/roberto-bellotti/" target="_blank"><i class="fas fa-globe"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="mailto:roberto.bellotti@uniba.it"><i class="far fa-envelope"></i></a>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="d-flex team-member">
+                    <div class="flex-shrink-0 me-3">
+
+                      <img src="https://media.licdn.com/dms/image/v2/D4D03AQGZIb_wASM42g/profile-displayphoto-shrink_200_200/B4DZSAx2onG4AY-/0/1737327340819?e=2147483647&v=beta&t=ZST1Mrf0lLOTPy1aFvGwIdIqmaVW3WUssNXOn1FD2Q8" alt="Ciro Russo">
+
+                    </div>
+                    <div>
+                      <h5 id="Ciro+Russo">
+                        Ciro Russo
+                        <br><small class="text-muted">University of Cassino and Southern Lazio</small>
+                      </h5>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="https://www.linkedin.com/in/ciro-russo-b14056100/?originalSubdomain=it"
+                            target="_blank"><i class="fas fa-globe"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="mailto:ciro.russo@unicas.it"><i class="far fa-envelope"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="d-flex team-member">
+                    <div class="flex-shrink-0 me-3">
+                      <img src="https://lh5.googleusercontent.com/g01nYGL1IFkbTP8teiCyIORV-b519kIN73VK-qq9HJ7Sde4FcOigaW_Q45apm39t4-VoLnJpbgdRN9d_mHS4S7-wEwAdHJf29Os6UpaL6D8yApO_Idzn37xqzQrDE4ZVbQ=w1280" alt="Grazia Gargano">
+                    </div>
+                    <div>
+                      <h5 id="Grazia+">
+                        Grazia Gargano
+                        <br><small class="text-muted">Univerisity of Bari Aldo Moro</small>
+                      </h5>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="https://sites.google.com/view/midasresearchgroup/people/grazia-gargano" target="_blank"><i class="fas fa-globe"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="mailto:grazia.gargano@uniba.it"><i class="far fa-envelope"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="d-flex team-member">
+                    <div class="flex-shrink-0 me-3">
+                      <img src="https://robidfz.github.io/assets/img/pic_profile.jpg" alt="Roberta De Fazio">
+                    </div>
+                    <div>
+                      <h5 id="Roberta+DeFazio">
+                        Roberta De Fazio
+                        <br><small class="text-muted">University of Campania Luigi Vanvitelli</small>
+                      </h5>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="" target="_blank"><i class="fas fa-globe"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="mailto:roberta.defazio@unicampania.it"><i class="far fa-envelope"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="d-flex team-member">
+                    <div class="flex-shrink-0 me-3">
+
+                      <img src="https://gaetanosettembre.github.io/assets/img/img_profile.jpg" alt="Gaetano Settembre">
+
+                    </div>
+                    <div>
+                      <h5 id="Gaetano+Settembre">
+                        Gaetano Settembre
+                        <br><small class="text-muted">University of Bari Aldo Moro</small>
+                      </h5>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a href="https://gaetanosettembre.github.io" target="_blank"><i
+                              class="fas fa-globe"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a href="mailto:gaetano.settembre@uniba.it"><i class="far fa-envelope"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+
+              <section id="committee" style="margin-bottom: 50px;">
+                <h3>Program Committee</h3>
+                <p>All submitted papers will be reviewed by three members of the technical program committee.</p>
+                <ul>
+                  <li><strong>Alessandro Bria</strong>, University of Cassino and Southern Lazio</li>
+                  <li><strong>Giovanna Castellano</strong>, University of Bari Aldo Moro</li>
+                  <li><strong>Ciro Castiello</strong>, University of Bari Aldo Moro</li>
+                  <li><strong>Sabino Ciavarella, MD</strong>, IRCCS Istituto Tumori Giovanni Paolo II - Bari</li>
+                  <li><strong>Nicoletta Del Buono</strong>, University of Bari Aldo Moro</li>
+                  <li><strong>Flavia Esposito</strong>, University of Bari Aldo Moro</li>
+                  <li><strong>Xavier Llado</strong>, University of Girona</li>
+                  <li><strong>Luisa Lorenzi, MD</strong>, University of Brescia & ASST degli Spedali Civili di Brescia</li>
+                  <li><strong>Claudio Marrocco</strong>, University of Cassino and Southern Lazio</li>
+                  <li><strong>Stefano Marrone</strong>, University of Campania Luigi Vanvitelli</li>
+                  <li><strong>Pierluigi Marzuillo, MD</strong>, University of Campania Luigi Vanvitelli</li>
+                  <li><strong>Francesco Mercaldo</strong>, University of Molise</li>
+                  <li><strong>Arnau Oliver</strong>, University of Girona</li>
+                  <li><strong>Giulio Russo</strong>, University of Cassino and Lazio Meridionale</li>
+                  <li><strong>Laura Verde</strong>, University of Campania Luigi Vanvitelli</li>
+                  <li><strong>Sabina Tangaro</strong>, National Institute for Nuclear Physics & University of Bari Aldo Moro</li>
+                  <li><strong>Gennaro Vessio</strong>, University of Bari Aldo Moro</li>
+                  <li><strong>Jan Vrba</strong>, University of Chemistry and Technology Prague</li>
+                  .. (to be updated)
+                </ul>
+                
+              </section>
+
+              <section id="registration" style="margin-bottom: 50px;">
+                <h3>Registration</h3>
+                <p>Here is reported the registration fee ONLY for the workshop days:
+                <img src="assets/theme/images/reg_fees.png" alt="Registration fee" class="img-fluid" style="max-width: 80%; height: auto;"></p>
+                <p>For detailed instructions and information on registration fees, please visit the <a href="https://sites.google.com/view/iciap25/registration">ICIAP registration page</a>.<br>
+                </p>
+              </section>
+
+
+              <section id="venue">
+                <h3>Venue</h3>
+                <p>Please read about the venue in the <a href="https://sites.google.com/view/iciap25/attending/conference-venue">ICIAP venue page</a>.</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer class="d-print-none">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg">
+          <ul class="list-inline">
+
+            <li class="list-inline-item">
+              <a href="mailto:impact.iciap@gmail.com">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="small mt-2">
+        <p>© IMPACT 2025 Workshop </p>
+        <p>Co-located with <a href="https://sites.google.com/view/iciap25">ICIAP 2025</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/theme/js/anchor.min.js"></script>
+  <script>
+    // Show anchors when hovering over headings, using anchor.js
+    (function () {
+      const headings = ".content h2[id], .content h3[id], .content h4[id], .content h5[id], .content h6[id]";
+      anchors.options = { placement: "right" };
+      anchors.add(headings);
+    })();
+  </script>
+
+
 </body>
+
 </html>
