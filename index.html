@@ -57,13 +57,31 @@
   <script src="/assets/theme/js/dynamic_page.js"></script>
 
   <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
     .section-padding {
-      padding: 0rem 1rem;
+      padding: 1.6rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 0.75rem;
+      scroll-margin-top: 20px; /* Reduced space for the navbar when scrolling */
     }
 
     h3 {
       border-bottom: 2px solid #dee2e6;
       padding-bottom: 0.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    main {
+      padding-top: 0; /* Removed unnecessary top padding */
+    }
+
+    .team-member-card img.rounded-circle {
+      border: 2px solid #d1d5da;
     }
   </style>
 
@@ -88,9 +106,9 @@
           <li class="navbar-item"><a class="nav-link" href="/#about">About</a></li>
           <li class="navbar-item"><a class="nav-link" href="/#c4p">Call for Papers</a></li>
           <li class="navbar-item"><a class="nav-link" href="/#dates">Important Dates</a></li>
+          <li class="navbar-item"><a class="nav-link" href="/#program">Program</a></li>
           <li class="navbar-item"><a class="nav-link" href="/#organizers">Committees</a></li>
           <li class="navbar-item"><a class="nav-link" href="/#registration">Registration</a></li>
-          <li class="navbar-item"><a class="nav-link" href="/#program">Program</a></li>
           <li class="navbar-item"><a class="nav-link" href="/#venue">Venue</a></li>
         </ul>
       </div>
@@ -256,7 +274,7 @@
                   Notification of acceptance: <strong>July 3, 2025</strong> <br>
                   Camera-ready papers: <strong>July 10, 2025</strong> <br>
                   Workshop: <strong>September 15, 2025 (Afternoon Session)</strong></p>
-                  ICIAP’25 allows a hybrid synchronous presentation for authors who register their papers.
+                  ICIAP'25 allows a hybrid synchronous presentation for authors who register their papers.
               </section>
 
               
@@ -416,12 +434,10 @@
               <section id="organizers" style="margin-bottom: 40px;" class="section-padding">
                 <h3>Organizing Committee</h3>
                 <div class="container">
-                  <div class="row">
-                    <!-- Organizzatori in un'unica riga -->
-                    <div class="col text-center d-flex flex-wrap justify-content-center">
-
-                      <!-- Roberto Bellotti -->
-                      <div class="team-member-card mx-3 mb-4" style="width: 180px;">
+                  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center">
+                    <!-- Roberto Bellotti -->
+                    <div class="col">
+                      <div class="team-member-card d-flex flex-column h-100">
                         <div class="text-center mb-2">
                           <img
                             src="https://images.zapnito.com/cdn-cgi/image/metadata=copyright,format=auto,quality=95,fit=scale-down/https://images.zapnito.com/users/568113/avatar/large_S48kDQVURG99cqQkmKug_Copia_20di_20CSM_2646_preview.jpg.png"
@@ -429,10 +445,12 @@
                             style="width: 100px; height: 100px; object-fit: cover;">
                         </div>
                         <div class="text-center">
-                          <h5 id="Roberto+Bellotti" class="mb-1" style="font-size: 1rem;">
+                          <strong class="mb-1">
                             Roberto Bellotti
-                          </h5>
+                          </strong>
                           <p class="text-muted small mb-2">University of Bari Aldo Moro</p>
+                        </div>
+                        <div class="mt-auto text-center">
                           <ul class="list-inline mb-0">
                             <li class="list-inline-item">
                               <a href="https://medphys.ba.infn.it/roberto-bellotti/" target="_blank"><i
@@ -444,9 +462,11 @@
                           </ul>
                         </div>
                       </div>
+                    </div>
 
-                      <!-- Ciro Russo -->
-                      <div class="team-member-card mx-3 mb-4" style="width: 180px;">
+                    <!-- Ciro Russo -->
+                    <div class="col">
+                      <div class="team-member-card d-flex flex-column h-100">
                         <div class="text-center mb-2">
                           <img
                             src="https://media.licdn.com/dms/image/v2/D4D03AQGZIb_wASM42g/profile-displayphoto-shrink_200_200/B4DZSAx2onG4AY-/0/1737327340819?e=2147483647&v=beta&t=ZST1Mrf0lLOTPy1aFvGwIdIqmaVW3WUssNXOn1FD2Q8"
@@ -454,10 +474,12 @@
                             style="width: 100px; height: 100px; object-fit: cover;">
                         </div>
                         <div class="text-center">
-                          <h5 id="Ciro+Russo" class="mb-1" style="font-size: 1rem;">
+                          <strong class="mb-1">
                             Ciro Russo
-                          </h5>
+                          </strong>
                           <p class="text-muted small mb-2">University of Cassino and Southern Lazio</p>
+                        </div>
+                        <div class="mt-auto text-center">
                           <ul class="list-inline mb-0">
                             <li class="list-inline-item">
                               <a href="https://www.linkedin.com/in/ciro-russo-b14056100/?originalSubdomain=it"
@@ -469,18 +491,22 @@
                           </ul>
                         </div>
                       </div>
+                    </div>
 
-                      <!-- Grazia Gargano -->
-                      <div class="team-member-card mx-3 mb-4" style="width: 180px;">
+                    <!-- Grazia Gargano -->
+                    <div class="col">
+                      <div class="team-member-card d-flex flex-column h-100">
                         <div class="text-center mb-2">
                           <img src="assets/theme/images/grace.jpeg" alt="Grazia Gargano" class="rounded-circle"
                             style="width: 100px; height: 100px; object-fit: cover;">
                         </div>
                         <div class="text-center">
-                          <h5 id="Grazia+Gargano" class="mb-1" style="font-size: 1rem;">
+                          <strong class="mb-1">
                             Grazia Gargano
-                          </h5>
+                          </strong>
                           <p class="text-muted small mb-2">University of Bari Aldo Moro</p>
+                        </div>
+                        <div class="mt-auto text-center">
                           <ul class="list-inline mb-0">
                             <li class="list-inline-item">
                               <a href="https://sites.google.com/view/midasresearchgroup/people/grazia-gargano"
@@ -492,18 +518,22 @@
                           </ul>
                         </div>
                       </div>
+                    </div>
 
-                      <!-- Roberta De Fazio -->
-                      <div class="team-member-card mx-3 mb-4" style="width: 180px;">
+                    <!-- Roberta De Fazio -->
+                    <div class="col">
+                      <div class="team-member-card d-flex flex-column h-100">
                         <div class="text-center mb-2">
                           <img src="https://robidfz.github.io/assets/img/pic_profile.jpg" alt="Roberta De Fazio"
                             class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;">
                         </div>
                         <div class="text-center">
-                          <h5 id="Roberta+DeFazio" class="mb-1" style="font-size: 1rem;">
+                          <strong class="mb-1">
                             Roberta De Fazio
-                          </h5>
-                          <p class="text-muted small mb-2">University of Campania Luigi Vanvitelli</p>
+                          </strong>
+                          <p class="text-muted small mb-2">Univ. of Campania Luigi Vanvitelli</p>
+                        </div>
+                        <div class="mt-auto text-center">
                           <ul class="list-inline mb-0">
                             <li class="list-inline-item">
                               <a href="https://robidfz.github.io" target="_blank"><i class="fas fa-globe"></i></a>
@@ -514,19 +544,23 @@
                           </ul>
                         </div>
                       </div>
+                    </div>
 
-                      <!-- Gaetano Settembre -->
-                      <div class="team-member-card mx-3 mb-4" style="width: 180px;">
+                    <!-- Gaetano Settembre -->
+                    <div class="col">
+                      <div class="team-member-card d-flex flex-column h-100">
                         <div class="text-center mb-2">
                           <img src="https://gaetanosettembre.github.io/assets/img/img_profile.jpg"
                             alt="Gaetano Settembre" class="rounded-circle"
                             style="width: 100px; height: 100px; object-fit: cover;">
                         </div>
                         <div class="text-center">
-                          <h5 id="Gaetano+Settembre" class="mb-1" style="font-size: 1rem;">
+                          <strong class="mb-1">
                             Gaetano Settembre
-                          </h5>
+                          </strong>
                           <p class="text-muted small mb-2">University of Bari Aldo Moro</p>
+                        </div>
+                        <div class="mt-auto text-center">
                           <ul class="list-inline mb-0">
                             <li class="list-inline-item">
                               <a href="https://gaetanosettembre.github.io" target="_blank"><i
@@ -538,8 +572,8 @@
                           </ul>
                         </div>
                       </div>
-
                     </div>
+
                   </div>
                 </div>
               </section>
