@@ -134,33 +134,6 @@
               <p><em>September 15, 2025 - Rome, Italy</em><br>(in-person and online)</p>
             </div>
             <a href="https://easychair.org/conferences/?conf=impact25" target="_blank" class="btn btn-primary btn-m mt-3">Submit your paper</a>
-            <div id="countdown" class="tags"></div>
-            <script>
-              // Set the date and time for the countdown
-              const countdownDate = new Date("June 27, 2025 00:00:00").getTime();
-
-              // Update the countdown every second
-              const countdownInterval = setInterval(function () {
-                const now = new Date().getTime();
-                const distance = countdownDate - now;
-
-                // Calculate days, hours, minutes, and seconds
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-                // Display the result in the countdown div
-                document.getElementById("countdown").innerHTML = `
-                  <p><br><i class="fas fa-hourglass-half"></i> Countdown to Submission deadline: <strong>${days}d ${hours}h ${minutes}m </strong></p>
-                  `;
-                // If the countdown is over, display a message
-                if (distance < 0) {
-                  clearInterval(countdownInterval);
-                  document.getElementById("countdown").innerHTML = "<p>Submission closed!</p>";
-                }
-              }, 1000);
-            </script>
-          </div>
         </div>
       </div>
     </header>
